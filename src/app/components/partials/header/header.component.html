@@ -1,0 +1,24 @@
+<nav>
+  <div class="logo">
+    <a routerLink="/">Food App</a>
+  </div>
+
+  <div class="menu-container">
+    <ul class="menu">
+      <li>
+        <a routerLink="/login">Login</a>
+      </li>
+      <li>
+        <a routerLink="/login" class="expand-dropdown">Ansari</a>
+        <ul class="dropdown-menu">
+            <li><a routerLink="/profile">Profile</a></li>
+            <li><a routerLink="/orders">Orders</a></li>
+            <li><a routerLink="/">Logout</a></li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="/login">Cart <span>(3)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>

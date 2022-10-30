@@ -1,0 +1,57 @@
+nav{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid blue;
+  padding: 1rem 0rem;
+}
+.logo{
+  margin-left: 2rem;
+}
+a{
+  text-decoration: none;
+  padding: 1rem;
+  transition: all 0.5s ease;
+  border-radius: .5rem;
+}
+a:hover{
+  background-color: blue;
+  color: whitesmoke;
+}
+
+.menu{
+  list-style: none;
+  position: relative;
+  margin: 0;
+  display: flex;
+}
+
+.menu li{
+  display: inline-block;
+}
+
+.dropdown-menu{
+  display: none;
+
+}
+
+.dropdown-menu a{
+  display: block;
+  color: whitesmoke;
+  border-radius: .5rem ;
+}
+.menu li:hover .dropdown-menu{
+  display: block;
+  margin: 0;
+  width: fit-content;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(12, 142, 235);
+  text-align: center;
+  flex-direction: column;
+  z-index: 1;
+  top: 2.7rem;
+  padding: 0;
+  border-radius: .5rem;
+}
