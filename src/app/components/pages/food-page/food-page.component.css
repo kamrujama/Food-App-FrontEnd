@@ -1,0 +1,111 @@
+.food-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+
+}
+
+.food-page >*{
+  min-width: 25rem;
+  max-width: 40rem;
+}
+
+.food-page img{
+  width: 25rem;
+  height: 25rem;
+  border-radius: 2rem;
+  border: 2px solid blue;
+}
+
+.details{
+margin-left: 1rem;
+}
+
+.heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading .name{
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.heading .favorite{
+  color: red;
+}
+
+.heading .not{
+  color: gray;
+}
+
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags a{
+  background-color: rgb(234, 234, 234);
+  opacity: .8;
+  outline: none;
+  color:gray;
+  /* border: .1rem solid blue; */
+  cursor: pointer;
+  padding: .4rem .9rem;
+  border-radius: 1rem;
+  margin-right: .3rem;
+}
+
+.origins{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.origins span{
+  background-color: rgb(234, 234, 234);
+  opacity: .8;
+  outline: none;
+  color: blue;
+  /* border: .1rem solid blue; */
+  cursor: pointer;
+  padding: .2rem .8rem;
+  border-radius: 1rem;
+  margin: .3rem .3rem .3rem 0;
+}
+
+.cookTime{
+  padding: .2rem .8rem;
+  color: gray;
+}
+.cookTime .time{
+  font-weight: bold;
+  color: rgb(44, 43, 43);
+}
+
+.price{
+  font-size: 1.1rem;
+  padding: .2rem .8rem;
+  color: rgb(27, 192, 247);
+}
+
+.price span{
+  color: red;
+  font-weight: bold;
+}
+
+button{
+  padding: .2rem .8rem;
+  width: 100%;
+  font-size: 1.2rem;
+  outline: none;
+  border: 0;
+  border-radius: 1rem;
+  background-color: blue;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+
