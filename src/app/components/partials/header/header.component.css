@@ -27,6 +27,7 @@ a:hover{
 
 .menu li{
   display: inline-block;
+  margin-right: .1rem;
 }
 
 .dropdown-menu{

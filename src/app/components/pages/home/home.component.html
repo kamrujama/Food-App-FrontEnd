@@ -1,1 +1,50 @@
-<p>home works!</p>
+<app-search></app-search>
+<div class="food-container" >
+  <div class="content-wrap">
+   <a routerLink="/" *ngFor="let food of food_data">
+      <div class="content">
+        <div class="imgBg">
+        <img src="{{ food.imageUrl }}" alt="" />
+        </div>
+        <div class="inner-content">
+        <div class="title">{{ food.name }}</div>
+        <div class="favorite {{ food.favorite ? '' : 'not' }}">
+          <span><i class="fa fa-solid fa-heart" style="font-size: 20px;"></i></span>
+        </div>
+        </div>
+      </div>
+
+      <div class="food-footer">
+        <div class="main-origin">
+          <span class="origin" *ngFor = "let origin of food.origins">
+            {{ origin}}
+          </span>
+        </div>
+
+        <div class="time">
+          <div>
+            <star-rating
+            [value]="food.stars"
+            [totalstars]="5"
+            checkedcolor="blue"
+            uncheckedcolor="gray"
+            [readonly]="false"
+            size="26"
+            >
+
+            </star-rating>
+          </div>
+          <div>
+          <span><i class="fa fa-clock-o" style="font-size: 24px"></i>
+          {{ food.cookTime }}
+          </span>
+          </div>
+        </div>
+
+        <div class="price">
+          <span>{{ food.price | currency }}</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.search-container{
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+input,
+button{
+  outline: none;
+  padding: .4rem .9rem;
+  border: 1px solid blue;
+  font-size: 1rem;
+  letter-spacing: .2rem;
+}
+input{
+  border-radius: 1rem 0 0 1rem;
+}
+button{
+  border-radius: 0 1rem 1rem 0;
+  background-color: rgb(0, 38, 255);
+  color: whitesmoke;
+  cursor: pointer;
+  opacity: .7;
+  transition: all 0.5s ease;
+}
+button:hover{
+ opacity: 1;
+}
