@@ -1,4 +1,6 @@
+
 import { Food } from "./app/shared/models/food";
+import { Tags } from "./app/shared/models/Tags";
 
 export const sample_food:Food[] = [
   {
@@ -89,4 +91,12 @@ export const sample_food:Food[] = [
     imageUrl : 'https://images.unsplash.com/photo-1529042410759-befb1204b468?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80',
     tags : ['Fast Food', 'Mix', 'Launch']
   },
+]
+
+export const sample_tags:Tags[] = [
+  {name : "All",count:8},
+  {name : "Launch",count:3},
+  {name : "Mix",count:6},
+  {name : "Fry",count:1},
+  {name : "Pizza",count:2}
 ]
